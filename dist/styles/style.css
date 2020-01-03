@@ -1,0 +1,168 @@
+/* Import font  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A; 
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.container {
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+#landing-img {
+    width: 100%;
+
+}
+/* make the image responsive */
+.container #landing-img {
+    width: 100%;
+    height: auto;
+} 
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 9px 25px;
+    background-color: #24252A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.container .btn-hover {
+    background-color: black;
+}
+
+.pagecontent {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+/* styles for cards */
+.card {
+    width: 150px;                 /* Set width of cards */
+    display: flex;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+    border: 1px solid black;    /* Set up Border */
+    border-radius: 4px;           /* Slightly Curve edges */
+    overflow: hidden;             /* Fixes the corners */
+    margin: 5px;                  /* Add space between cards */
+    height: 200px;
+}
+  
+.card-header {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #333333;
+    background-color: #FFEBEE;
+    padding: 5px 10px;
+}
+  
+.card-main {
+    display: flex;              /* Children use Flexbox */
+    flex-direction: column;     /* Rotate Axis to Vertical */
+    justify-content: center;    /* Group Children in Center */
+    align-items: center;        /* Group Children in Center (on cross axis) */
+    padding: 15px 0;            /* Add padding to the top/bottom */
+}
+  
+.material-icons {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 5px;
+}
+  
+.main-description {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#caliroll {
+    width: 120px;
+    height: 120px;
+}
+#spicytuna {
+    width: 120px;
+    height: 120px;
+}
+#shrimp {
+    width: 120px;
+    height: 120px;
+}
+#dragonroll {
+    width: 120px;
+    height: 120px;
+}
