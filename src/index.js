@@ -1,19 +1,18 @@
 import _ from 'lodash';
 import { loadPage } from './loadpage.js';
+import { buildmenu, createmenu } from './themenu.js';
 
-function component() {
-    const element = document.createElement('button');
-    const element1 = document.createElement("P");
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element1.innerHTML = "Hello from paragraph";
-    
-    return element1;
-  }
 
   
-  // calling the loadpage function from the loadpage.js file 
-  loadPage();
+// calling the loadpage function from the loadpage.js file by default 
+loadPage();
 
+// if menu button is clicked
+// adding event listeners to li's
+document.getElementById("li").addEventListener("click", function(){
+  alert("Menu clicked on");
+});
+
+// createmenu();
+// if About Us is clicked
  

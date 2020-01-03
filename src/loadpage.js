@@ -22,12 +22,17 @@ const loadPage = () => {
     const li = document.createElement("li");
     ul.appendChild(li);
     li.innerHTML = "The Menu";
+    li.setAttribute("id", "li");
+
     const li_two = document.createElement("li");
     ul.appendChild(li_two);
     li_two.innerHTML = "About Us";
+    li_two.setAttribute("id", "li_two");
     const li_three = document.createElement("li");
     ul.appendChild(li_three);
     li_three.innerHTML = "Contact";
+
+    
 
     // creating link 
     const link = document.createElement("a");
